@@ -18,8 +18,6 @@ const Main: React.FC = () => {
   const [ip, setIP] = useState('');
   const [ipInfo, setIpInfo] = useState<IpInfo>();
 
-  console.log(process.env.NODE_ENV);
-
   async function handleSubmit(
     event: FormEvent<HTMLFormElement>
   ): Promise<void> {
