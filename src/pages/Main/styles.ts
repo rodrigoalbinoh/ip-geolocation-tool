@@ -66,12 +66,15 @@ export const ResultContainer = styled.div`
     flex-direction: column;
     margin-top: 20px;
 
-
     div {
       width: 50%;
       display: flex;
       justify-content: space-between;
       margin-top: 20px;
+
+      @media only screen and (max-width: 425px){
+        flex-direction: column;
+      }
 
       span, strong {
         color: #f2f2f2;
